@@ -1,51 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Shipping and Billing</title>
-  <style>
-    input {
-      border: 1px solid black;
-    }
-
-    input:focus {
-      background-color: #E6E6E6;
-    }
-
-    fieldset {
-      margin-bottom: 4%;
-    }
-  </style>
-  <script src="js/autocomplete.js"></script>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+  <meta http-equiv="refresh">
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
 </head>
-
 <body>
-  <h1>JavaScript Homework</h1>
-  <p>Add the JavaScript code needed to enable auto-complete on this form. Whenever the checkbox is checked, the code
-    should automatically copy the values from Shipping Name and Shipping Zip into the Billing Name and Billing Zip. If
-    the checkbox is unchecked, the Billing Name and Billing Zip should go blank.</p>
+  <div class="main-wrapper" role="main">
+<div class="main-content">
+<noscript>
+  Noscript element
+</noscript>
+</div>
+</div>
+  <h1> Interactivity with JS (Final Project)</h1>
+	<div id = "image">
+		Hover over an image
+	</div>
 
-  <form>
-    <fieldset>
-      <legend>Shipping Information</legend> <label for="shippingName">Name:</label> <input type="text" name="Name"
-        id="shippingName" required><br />
+	<img class = "preview" alt = "Dragon" src = "https://imgtr.ee/images/2023/11/30/893255b38b08b4d13e9f2f366c4f5012.jpeg" onmouseover="upDate(this)" onmouseout="unDo()" tabindex="0">
+	
+	<img class = "preview" alt = "Hawks" src = "https://imgtr.ee/images/2023/11/30/00da7eed8988e19634a3e5450a2cc6db.jpeg" onmouseover="upDate(this)" onmouseout="unDo()" tabindex="0">
+	
+	<img class = "preview" src = "https://imgtr.ee/images/2023/11/30/bf645941a5c427ed5b71e714136c3c4e.jpeg" alt = "Kuzan" onmouseover="upDate(this)" onmouseout="unDo()" tabindex="0">
 
-      <label for="shippingzip">Zip code:</label> <input type="text" name="zip" id="shippingZip" pattern="[0-9]{5}"
-        required><br />
-    </fieldset>
-    <input type="checkbox" id="same" name="same" onchange="billingFunction()" />
-    <label for="same">Is the Billing Information the Same?</label>
-    <fieldset>
-      <legend>Billing Information</legend> <label for="billingName">Name:</label> <input type="text" name="Name"
-        id="billingName" required><br />
+    <img class = "preview" src = "https://imgtr.ee/images/2023/11/30/77c11db7b06e85cd9375758e447c544e.jpeg" alt = "Reign" onmouseover="upDate(this)" onmouseout="unDo()" tabindex="0">
 
-      <label for="billingzip">Zip code:</label> <input type="text" name="zip" id="billingZip" pattern="[0-9]{5}"
-        required><br />
-    </fieldset>
+    <img class = "preview" src = "https://imgtr.ee/images/2023/11/30/f656532b09f0d5e78d646dfdcf0bf41b.jpeg" alt = "Sabo" onmouseover="upDate(this)" onmouseout="unDo()" tabindex="0">
 
-    <input type="submit" value="Verify" />
-  </form>
+    <img class = "preview" src = "https://imgtr.ee/images/2023/11/30/d37a1090efd36f219e1b906119fb5a37.jpeg" alt = "Ida" onmouseover="upDate(this)" onmouseout="unDo()" tabindex="0">
 </body>
-
 </html>
+ 
+
